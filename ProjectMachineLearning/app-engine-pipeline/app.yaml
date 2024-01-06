@@ -1,0 +1,19 @@
+runtime: python38
+
+# The entrypoint should start a process that responds to HTTP requests on the $PORT
+entrypoint: gunicorn -b :$PORT main:app
+
+# https://cloud.google.com/appengine/docs/standard/reference/app-yaml?tab=python
+
+# instance_class: F1
+manual_scaling:
+  instances: 1
+resources:
+  cpu: 2
+  memory_gb: 2
+  disk_size_gb: 10
+
+# TODO: set the environment variables in the yaml file specified below
+# Ensure that you DO NOT copy/move the env_vars.yaml file into the submission folder
+includes:
+  - /home/clouduser/env_vars.yaml

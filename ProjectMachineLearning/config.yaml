@@ -1,0 +1,57 @@
+# You can adjust maxTrialCount to balance the cost and the rounds of tuning
+maxTrialCount: 15
+parallelTrialCount: 10
+maxFailedTrialCount: 0
+studySpec:
+  metrics:
+  - metricId: nyc_fare
+    goal: MINIMIZE # i.e., the goal is to minimize the RMSE
+  parameters:
+  - parameterId: max_depth
+    # This hyperparamter can be used to control over-fitting,
+    # because a larger depth will make the model to learn relations
+    # in a more specific way for particular training samples
+    #
+    # This entry matches the following code in ai_platform_trainer/train.py
+    #    parser.add_argument(
+    #        '--max_depth',
+    #        default=6,
+    #        type=int
+    #    )
+    integerValueSpec:
+    # This entry defines the type of the parameter as integer
+    # If the parameter type is double, change this entry to doubleValueSpec
+      minValue: 4
+      maxValue: 10
+  - parameterId: learning_rate
+    doubleValueSpec:  # Change to doubleValueSpec for floating-point parameters
+      minValue: 0.01
+      maxValue: 1.0
+  - parameterId: subsample
+    doubleValueSpec: # Change to doubleValueSpec for floating-point parameters
+      minValue: 0.01
+      maxValue: 1.0
+  - parameterId: n_estimators
+    integerValueSpec:
+      minValue: 50
+      maxValue: 100
+  # TODO: Add at least 3 more parameters to be tuned by HyperTune
+  # You need to update both config.yaml and ai_platform_trainer/train.py
+
+# The following section represents training job specification. Below is the information for some of the important parameters:
+  # executorImageUri: Required. The URI of a container image in Artifact Registry provided by Vertex AI that will run the provided Python package.
+  # packageUris: Required. The Google Cloud Storage location of the Python package files which are the training program and its dependent packages. In this case, this points to the training app tar file uploaded to the cloud storage bucket.
+  # pythonModule: Required. The Python module name to run after installing the packages. In this case, it refers to the train.py script.
+  # baseOutputDirectory.outputUriPrefix: The Cloud Storage location to store the output of this HyperparameterTuningJob.
+# TODO: Set the 2 <your_bucket_id> in the following section to the bucket id you created.
+trialJobSpec:
+ workerPoolSpecs:
+   replicaCount: 1
+   machineSpec:
+     machineType: n1-standard-4
+   pythonPackageSpec:
+     executorImageUri: us-docker.pkg.dev/vertex-ai/training/tf-cpu.2-8:latest
+     packageUris: gs://ml-fare-prediction-120818/fare-prediction/dist/trainer-0.1.tar.gz
+     pythonModule: vertex_ai_trainer.train
+ baseOutputDirectory:
+     outputUriPrefix: gs://ml-fare-prediction-120818/

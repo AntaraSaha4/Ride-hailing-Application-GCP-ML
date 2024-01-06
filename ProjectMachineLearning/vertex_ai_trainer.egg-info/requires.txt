@@ -1,0 +1,7 @@
+cloudml-hypertune
+google-cloud
+google-cloud-storage
+matplotlib
+pandas
+scikit-learn
+xgboost

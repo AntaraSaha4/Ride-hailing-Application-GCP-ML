@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "ml-fare-prediction-120818",
+  "private_key_id": "68a160b0f29f459512e5c70435d7dae0c6e8e64b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQDmETC8U476RxMQ\nLyFX/7up6QvoYbo7YaVtlvATZgTEfRNSa30IdhE2qP1gZvcBfGJslVE5cC+F27dK\nrk9lY3rqsLcMlLiN/YcN74VDQq5Uzh8IDOGbyfy0IWDNstVfY8QbOpN4hQDejr1y\nLP5NXNxySKeeHeY0fqS1GMFxnaBPTYSIPwwNfqn9dcHiikE+JwSXW/d8p3m2/R7B\nnkiwW9OQsCJYXOqi+9IcRGChtm+sm7HK2PsY5/xG69MZCZSyvHxfQLOw1JayH17E\n6lVS4asxltODaUXak33XqNqCzfWFcbon42tZHaJDibDcp5QjEL7AzEwoiup7jZ6s\nCjPVTDiBAgMBAAECggEAH/AFebNIzx4UO6QrRw3JdawUGtmMMoea4SR5pdu88DDj\nwIaK6CSJvbKGX/5TLknf2O5+hNB5zGWEo5GglHTToKZQ9uZjW1S1TZ4xO/XTARNP\nE/1DyW5oDfJvP4bin3gYRmZih/HAveSHUIUF9WPdd2D2IdlJNoLZJwmtevH0ieV3\nzcSiiktCi2gY6F0fAJvgoYP9qkj8C/aAGB9G0jCxBR1ZjBorIehqKTL02PRNV4h8\n1x/80mVQf97bPbwNLHhCE8O6E9rQpfi6IVF+uxx46mJLCG2qOw3VvIPpiKF8G+Hq\nKJLqwKVgBuXXZq2JCgEyUTliUgljxIuW6fbBJB2C9QKBgQDzvUIDNnr7+j2Tdlvy\nwJEjp6Vl3XkrnYz82RWTL2aXqQ2FqSt+WTXXeeE7mAKls8rmRgla0z0s0xfC+ebI\n6ZiHx3yi3Ja7NIIp/Kvc1Uo3THEo04kDST8cnJ8tgrWItnNls2h2TxBjj1O4gfnA\n6CpH6/1jj0k5sfsyLw0Xa3lfnQKBgQDxo97BaVeGHwCnk0zR5HUVSN4bF+Kb/Tak\nqn+ixXDB7bBPpD9+KxKT+UFtD83hHunQYGlJYfpj0PU24yglHmySyeaVG33+IrVE\n4FdmeMKU7VYxyhMha8iVwYXr4BgRCZsh4gBjrB0cQRzXPcZykKdakzmcGTR4iF0/\n5MuOOXoRNQKBgQCnVIa9LenAk0sysU7umMULdUxXYnSNPNxNubrWEPSdqbFe0YTK\nePQ9ua6m+vTWTVg+Platw9d7rm/hqy6FP9k3Xfxy0n2oh6PUr2JNeSA6VoBZRuAJ\nIX/yZJPi6pk2Agu3BjPxBNZ7gyo2wQR1Ku3b8mdCslvTAB0zlpmmOmJZAQJ/DTbo\n96rLHoqTfpaPnOrhfEh/3PtxaRZv5pFsaXpisDhPbAuPbVbtrSn0agJzP9xw7PRY\nzaqOBudmgZnqmB0R0vU3pu/Z9Avx3dJm9TOlcH+KNy7V3P4H+iibKksXBdeApFm3\nq7u9282zxhGayKkgfdOPUvoN5ImQj+3zM9Pw2QKBgBt04ifL74LzV6C1NKbV+1Eb\nnzplLvKKMjIK2SbsiuvOJG+9p8+01EV/PeWysfAFK/uMqtkmRByaMsbZ6cUFvA4A\nStVwL6uwr1uo2CKVBMMNCZtkHm8KfZCsv3laO2pmWntwGMTIPujp2Ws90LyR11RG\ns5hpFA/f9Lhog4OgZASh\n-----END PRIVATE KEY-----\n",
+  "client_email": "p6-task3-serviceaccount@ml-fare-prediction-120818.iam.gserviceaccount.com",
+  "client_id": "107972762567278565622",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/p6-task3-serviceaccount%40ml-fare-prediction-120818.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
